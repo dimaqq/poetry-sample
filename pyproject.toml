@@ -7,9 +7,13 @@ authors = ["Dima Tisnek <dimaqq@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 fastapi = "^0.72.0"
+uvicorn = "^0.17.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
+
+[tool.poetry.scripts]
+serve = "poetry_sample:serve"
 
 [build-system]
 requires = ["poetry-core @ git+https://github.com/python-poetry/poetry-core.git@master"]
